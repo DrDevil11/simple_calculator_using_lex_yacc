@@ -39,8 +39,7 @@ yyparse();
 return 0;
 } 
 
-void yyerror() 
-{ 
-printf("\nEntered arithmetic expression is Invalid\n\n"); 
-
-} 
+//void yyerror() 
+//{ 
+//printf("\nEntered arithmetic expression is Invalid\n\n"); 
+//} 
