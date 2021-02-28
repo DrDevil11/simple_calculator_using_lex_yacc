@@ -3,6 +3,7 @@
 #include<stdio.h> 
 #include "y.tab.h" 
 extern int yylval; 
+void yyerror();
 %} 
 
 
@@ -24,6 +25,11 @@ extern int yylval;
 .        yyerror();
 
 %% 
+void yyerror()
+{
+	printf("\nEntered arithmetic expression is Invalid\n\n"); 
+
+}
 
 int yywrap(void) 
 { 
